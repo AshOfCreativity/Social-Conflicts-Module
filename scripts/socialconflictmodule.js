@@ -1,3 +1,4 @@
+
 class SocialConflictModule {
   constructor() {
     this.factions = [];
@@ -45,6 +46,12 @@ class SocialConflictModule {
 }
 
 const module = new SocialConflictModule();
+
+Hooks.once('init', async function() {
+  console.log('my-social-conflict-module | Initializing Social Conflict Module');
+  // Additional initialization code can go here
+});
+
 module.addFaction('Faction 1', 2);
 module.addFaction('Faction 2', 1);
 module.addStronghold('Faction 1', 'Stronghold 1');
