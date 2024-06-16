@@ -1,0 +1,18 @@
+{
+  "name": "my-social-conflict-module",
+  "title": "Social Conflict Module",
+  "description": "A module to manage social conflicts in Foundry VTT",
+  "version": "1.0.0",
+  "author": "Your Name",
+  "minimumCoreVersion": "0.7.9",
+  "compatibleCoreVersion": "0.7.9",
+  "scripts": ["scripts/socialConflictModule.js"],
+  "esmodules": [],
+  "styles": [],
+  "packs": [],
+  "languages": [],
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": ""
+}
