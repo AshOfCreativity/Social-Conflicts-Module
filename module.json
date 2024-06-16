@@ -1,5 +1,5 @@
 {
-  "name": "my-social-conflict-module",
+  "name": "social-conflict-module",
   "title": "Social Conflict Module",
   "description": "A module to manage social conflicts in Foundry VTT",
   "version": "1.0.0",
@@ -7,12 +7,12 @@
   "minimumCoreVersion": "0.7.9",
   "compatibleCoreVersion": "0.7.9",
   "scripts": ["scripts/socialConflictModule.js"],
-  "esmodules": [],
+  "esmodules": ["scripts/socialConflictApp.js"],
   "styles": [],
   "packs": [],
   "languages": [],
   "url": "",
-  "manifest": "",
-  "download": "",
-  "license": ""
+  "manifest": "https://ashofcreativity.github.io/Social-Conflicts-Module/module.json",
+  "download": "https://ashofcreativity.github.io/Social-Conflicts-Module/",
+  "license": "LICENSE.txt"
 }
