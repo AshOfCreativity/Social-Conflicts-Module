@@ -1,0 +1,18 @@
+<div>
+  {{#each factions}}
+    <div>
+      <h3>{{name}}</h3>
+      <p>Priority: {{priority}}</p>
+      <div>
+        {{#each strongholds}}
+          <h4>{{name}}</h4>
+          <ul>
+            {{#each encounters}}
+              <li>{{description}}</li>
+            {{/each}}
+          </ul>
+        {{/each}}
+      </div>
+    </div>
+  {{/each}}
+</div>
