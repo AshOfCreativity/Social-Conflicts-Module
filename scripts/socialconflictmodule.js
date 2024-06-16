@@ -1,4 +1,3 @@
-
 class SocialConflictModule {
   constructor() {
     this.factions = [];
@@ -49,19 +48,6 @@ const module = new SocialConflictModule();
 
 Hooks.once('init', async function() {
   console.log('my-social-conflict-module | Initializing Social Conflict Module');
-  // Additional initialization code can go here
-});
-
-module.addFaction('Faction 1', 2);
-module.addFaction('Faction 2', 1);
-module.addStronghold('Faction 1', 'Stronghold 1');
-module.generateEncounter('Faction 1', 'Stronghold 1', 'player');
-module.shelveFactions();
-
-
-// Initialize the module
-Hooks.once('init', async function() {
-  console.log('my-social-conflict-module | Initializing Social Conflict Module');
 
   // Register module settings
   game.settings.register('my-social-conflict-module', 'exampleSetting', {
@@ -92,4 +78,14 @@ Hooks.once('init', async function() {
   });
 
   // Additional initialization code can go here
+});
+
+Hooks.once('ready', async function() {
+  console.log('my-social-conflict-module | Ready to use Social Conflict Module');
+
+  module.addFaction('Faction 1', 2);
+  module.addFaction('Faction 2', 1);
+  module.addStronghold('Faction 1', 'Stronghold 1');
+  module.generateEncounter('Faction 1', 'Stronghold 1', 'player');
+  module.shelveFactions();
 });
