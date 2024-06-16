@@ -57,3 +57,39 @@ module.addFaction('Faction 2', 1);
 module.addStronghold('Faction 1', 'Stronghold 1');
 module.generateEncounter('Faction 1', 'Stronghold 1', 'player');
 module.shelveFactions();
+
+
+// Initialize the module
+Hooks.once('init', async function() {
+  console.log('my-social-conflict-module | Initializing Social Conflict Module');
+
+  // Register module settings
+  game.settings.register('my-social-conflict-module', 'exampleSetting', {
+    name: 'Example Setting',
+    hint: 'An example setting for demonstration purposes.',
+    scope: 'world',
+    config: true,
+    default: true,
+    type: Boolean
+  });
+
+  game.settings.register('my-social-conflict-module', 'enableEncounters', {
+    name: 'Enable Encounters',
+    hint: 'Toggle the generation of downtime encounters.',
+    scope: 'world',
+    config: true,
+    default: true,
+    type: Boolean
+  });
+
+  game.settings.register('my-social-conflict-module', 'defaultPriority', {
+    name: 'Default Faction Priority',
+    hint: 'Set the default priority for new factions.',
+    scope: 'world',
+    config: true,
+    default: 1,
+    type: Number
+  });
+
+  // Additional initialization code can go here
+});
