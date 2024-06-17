@@ -1,22 +1,10 @@
 {
-  "name": "social-conflict-module",
+  "id": "social-conflict-module",
   "title": "Social Conflict Module",
   "description": "A module to manage social conflicts in Foundry VTT",
-  "version": "0.5.5",
-  "author": "James Streissand",
-  "minimumCoreVersion": "0.7.9",
-  "compatibleCoreVersion": "0.7.9",
-  "scripts": [
-      "scripts/socialConflictModule.js"
-  ],
-  "esmodules": [
-      "scripts/socialConflictApp.js"
-  ],
-  "styles": [],
-  "packs": [],
-  "languages": [],
-  "url": "",
+  "version": "0.5.1","authors": [{"name": "James Streissand"}],
+  "compatibility": {"minimum": "10", "verified": "11"},
+  "esmodules": ["scripts/socialConflictApp.js", "scripts/socialConflictModule.js"],
   "manifest": "https://ashofcreativity.github.io/Social-Conflicts-Module/module.json",
-  "download": "https://github.com/AshOfCreativity/Social-Conflicts-Module/releases/download/v0.5.5/Social-Conflicts-Module-main.zip",
-  "license": "LICENSE.txt"
+  "download": "https://ashofcreativity.github.io/Social-Conflicts-Module/"
 }
