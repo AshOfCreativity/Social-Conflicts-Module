@@ -14,7 +14,7 @@ class SocialConflictApp extends FormApplication {
   }
 
   async getData() {
-    // Assuming 'module' is an instance of SocialConflictModule
+    // Return data to the template
     return {
       factions: module.factions
     };
