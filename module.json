@@ -6,5 +6,5 @@
   "compatibility": {"minimum": "10", "verified": "11"},
   "esmodules": ["scripts/socialConflictApp.js", "scripts/socialConflictModule.js"],
   "manifest": "https://ashofcreativity.github.io/Social-Conflicts-Module/module.json",
-  "download": "https://ashofcreativity.github.io/Social-Conflicts-Module/"
+  "download": "https://github.com/AshOfCreativity/Social-Conflicts-Module/releases/download/v0.5.6/Social-Conflicts-Module.zip"
 }
